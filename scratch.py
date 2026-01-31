@@ -56,3 +56,21 @@ print()
 x = float(input("Enter a value for x: \n"))
 y = 1 / (x + 1 / (x + 1 / (x + 1 / x)))
 print("y = ", y)
+
+# Get end time
+hour = int(input("What is the hour of your start time?: \n"))
+minutes = int(input("What is the minute of your start time?: \n"))
+duration = int(input("How many minutes will the event last?: \n"))
+
+# Convert the start time into total number of minutes
+start_total_minutes = (hour * 60) + minutes
+
+# Add in your duration minutes
+end_total_minutes = start_total_minutes + duration
+
+# Convert back to time formart
+ending_hour = (end_total_minutes // 60) % 24
+ending_minutes = end_total_minutes % 60
+
+# Output the time
+print(f"Endtime: {ending_hour}:{str(ending_minutes).zfill(2)}")
