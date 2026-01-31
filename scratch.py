@@ -14,6 +14,6 @@ seconds = int(round(pace_seconds_per_mile % 60))
 
 print(f"Average pace: {str(int(round(pace_seconds_per_mile))).zfill(3)} seconds per mile")
 print(f"That is approximately {str(minutes).zfill(2)}:{str(seconds).zfill(2)} per mile")
-
+print()
 
 print("    *\n" "   ***\n" "  *****\n" " *******\n" "*********\n" "    |\n")
