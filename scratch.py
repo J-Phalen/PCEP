@@ -35,3 +35,19 @@ print()  # blank space
 
 print('"I\'m"' + "\n" + '"Learning"' + "\n" + '"Python"')
 print()  # blank space
+
+
+john = 3
+mary = 5
+adam = 6
+
+print(f"John has {john} apples, Mary has {mary} apples, and Adam has {adam} apples.\n")
+total_apples = john + mary + adam
+print(f"Total Apples: {total_apples}\n")
+print("John steals 2 of Adam's apples because he is a thief...\n")
+adam -= 2
+john += 2
+
+# Reprint the same line with the new values
+print(f"John has {john} apples, Mary has {mary} apples, and Adam has {adam} apples.")
+print()
