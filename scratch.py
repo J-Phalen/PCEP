@@ -18,10 +18,12 @@ seconds = int(round(pace_seconds_per_mile % 60))  # Remove the decimal point wit
 
 print(f"Average pace: {str(int(round(pace_seconds_per_mile))).zfill(3)} seconds per mile")
 print(f"That is approximately {str(minutes).zfill(2)}:{str(seconds).zfill(2)} per mile")
-print()
+print()  # blank space
 
 # Print a Christmas Tree
+print("This is a Christmas tree")
 print("    *\n" "   ***\n" "  *****\n" " *******\n" "*********\n" "    |\n")
+print()  # blank space
 
 var = 0  # change to whatever
 if var:
@@ -29,5 +31,7 @@ if var:
 else:
     print("false")
 
+print()  # blank space
 
-print('"I\'m"' + "\n")
+print('"I\'m"' + "\n" + '"Learning"' + "\n" + '"Python"')
+print()  # blank space
