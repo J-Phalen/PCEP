@@ -51,3 +51,8 @@ john += 2
 # Reprint the same line with the new values
 print(f"John has {john} apples, Mary has {mary} apples, and Adam has {adam} apples.")
 print()
+
+
+x = float(input("Enter a value for x: \n"))
+y = 1 / (x + 1 / (x + 1 / (x + 1 / x)))
+print("y = ", y)
