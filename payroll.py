@@ -35,13 +35,14 @@ def calculate_pay(hours, rate):
         raise ValueError("Hours and Rate values cannot be negative")
 
     # Calculate straight pay
-    straightPay = hours * rate
+    pay = hours * rate
     if hours <= 40:
-        return straightPay
+        return pay
     else:
-        otRate = rate * 1.5
+        otRate = rate * 0.5
         otHours = hours - 40
-        return straightPay + (otRate * otHours)
+        straightPay = pay + (otRate * otHours)
+        return straightPay
 
 
 # Program Execution starts here.
