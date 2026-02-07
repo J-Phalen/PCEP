@@ -1,6 +1,5 @@
 class NegativeValueError(Exception):
     """Raised when a negative value is provided where positive is expected"""
-
     pass
 
 
@@ -42,12 +41,12 @@ def calculate_pay(hours, rate):
     try:
         hours = float(hours)
         rate = float(rate)
-    except TypeError, ValueError:
+    except TypeError, ValueError, NegativeValueError:
         raise ValueError("The input provided was not found to be a valid floating point.")
 
     # Next we check for negative values of the correct input type that will still break the function
     if hours < 0 or rate < 0:
-        raise ValueError("Hours and Rate values cannot be negative")
+        raise NegativeValueError("Hours and Rate values cannot be negative")
 
     # Calculate straight pay
     pay = hours * rate
