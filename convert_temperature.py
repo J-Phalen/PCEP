@@ -33,7 +33,7 @@ def convert_temperature(celsius):
         raise ValueError("Temperature input must in digits")
 
     fahrenheit = (celsius * (9 / 5)) + 32  # Yes I know (()) not needed but it helps show ooo.
-    return math.floor(fahrenheit)
+    return math.floor(fahrenheit)  # round down to nearest whole number aka drop the decimal place
 
 
 try:
