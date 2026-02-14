@@ -13,4 +13,4 @@ if tax < 0:
     tax = 0
 
 tax = round(tax, 0)
-print(f"Your tax is: {tax:.2f} thalers")
+print(f"Your tax is: {tax} thalers")
