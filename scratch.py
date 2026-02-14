@@ -1,4 +1,8 @@
-income = float(input("Enter your annual income: "))
+try:
+    income = float(input("Enter your annual income: "))
+except ValueError:
+    print("Invalid input. Please enter a numeric value for income.")
+    exit(1)
 
 if income > 85528:
     tax = 14839.02 + (0.32 * (income - 85528))
