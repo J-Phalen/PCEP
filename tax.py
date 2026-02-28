@@ -10,7 +10,7 @@ else:
     tax = (0.18 * income) - 556.02
 
 if tax < 0:
-    tax = 0
+    tax = 0.0
 
 tax = round(tax, 0)
 print(f"Your tax is: {tax} thalers")
