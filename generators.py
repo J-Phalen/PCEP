@@ -12,6 +12,7 @@ def mymap(func, iterable):
     """
     takes a list of values and applies the given function to each value
     """
-
+    print("hello world")
     for x in iterable:
         yield func(x)
+    print("goodbye shafan")

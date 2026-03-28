@@ -26,7 +26,10 @@ def factorial(n):
 
 
 def trampoline(coro):
-    """Takes a generator-based coroutine, which yields whenever it calls a generator-based coroutine, and trampolines using an explicit stack."""
+    """
+    Takes a generator-based coroutine, which yields whenever it calls a generator-based coroutine,
+    and trampolines using an explicit stack.
+    """
     stack = [coro]
     val = None
     while stack:
