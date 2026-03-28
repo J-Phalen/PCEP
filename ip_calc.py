@@ -83,7 +83,7 @@ class Data_Collector:
             print(f"Error: {e}")
             return None
 
-    def network_address_no_bitwise(self, ip_octets, mask_octets):
+    def calculate_network_address(self, ip_octets, mask_octets):
         net = []
         for ip, mask in zip(ip_octets, mask_octets):
             if mask == 255:
